@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="ear2019zs_26@kbss.felk.cvut.cz" uuid="c7f0746f-565f-4809-8d9e-0c98bfb57765">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://kbss.felk.cvut.cz:5433/ear2019zs_26</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="@kbss.felk.cvut.cz" uuid="2a12a811-e4b1-4edf-841e-e5c3d58bc353">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://kbss.felk.cvut.cz:5433/</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="@kbss.felk.cvut.cz [2]" uuid="e8143da5-2f09-4b82-84cf-6d5af0d202ea">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://kbss.felk.cvut.cz:5433/</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="postgres@localhost" uuid="b6a09c19-baf0-45fa-a84d-2c6e1f41ed5d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+    </data-source>
+  </component>
+</project>
