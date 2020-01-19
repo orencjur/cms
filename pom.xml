@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cz.cvut.kbss.ear</groupId>
-    <artifactId>eshop</artifactId>
+    <groupId>cms</groupId>
+    <artifactId>cms</artifactId>
     <version>0.0.1</version>
-    <name>EAR e-shop</name>
-    <packaging>jar</packaging>
+    <name>cms</name>
+    <packaging>war</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

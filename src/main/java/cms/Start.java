@@ -2,6 +2,7 @@ package cms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
  * Main entry point of a Spring Boot application.
@@ -12,9 +13,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * SpringApplication} then starts the Spring context and the whole application.
  */
 @SpringBootApplication
-public class Start {
+public class Start{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)    {
         SpringApplication.run(Start.class, args);
     }
 }
