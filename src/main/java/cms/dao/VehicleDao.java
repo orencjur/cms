@@ -38,8 +38,6 @@ public class VehicleDao extends baseDao<Vehicle>{
 
     public void destroyVehicle(String licensePlate){
         Vehicle v = em.find(Vehicle.class, licensePlate);
-        //em.getTransaction();
         em.remove(v);
-        //em.getTransaction().commit();
     }
 }

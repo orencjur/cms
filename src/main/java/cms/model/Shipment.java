@@ -15,8 +15,6 @@ public class Shipment implements Serializable {
   private String status;
   private String destination;
 
-//  @OneToOne(mappedBy = "", optional = false)
-  private Vehicle vehicle;
 
   public String getCargo() {
     return cargo;

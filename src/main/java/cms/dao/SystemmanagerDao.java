@@ -43,9 +43,7 @@ public class SystemmanagerDao extends baseDao<Systemmanager>{
         Objects.requireNonNull(username);
         Regularuser user = em.find(Regularuser.class, username);
         try {
-            em.getTransaction();
             em.remove(user);
-            em.getTransaction().commit();
             return true;
         }catch (Exception e){
             return false;
@@ -56,10 +54,8 @@ public class SystemmanagerDao extends baseDao<Systemmanager>{
         Objects.requireNonNull(id);
         Shipment s = em.find(Shipment.class, id);
         s.setAssignedvehicle(licensePlate);
-        em.getTransaction();
         try{
             em.persist(s);
-            em.getTransaction().commit();
             return true;
         }catch(Exception e){
             return false;

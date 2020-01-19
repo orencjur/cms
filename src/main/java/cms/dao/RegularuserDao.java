@@ -31,17 +31,13 @@ public class RegularuserDao extends baseDao<Regularuser>{
         Objects.requireNonNull(id);
         Shipment s = em.find(Shipment.class, id);
         s.setStatus("Finished");
-        em.getTransaction();
         em.persist(s);
-        em.getTransaction().commit();
     }
 
     public void setShipmentFailed(Integer id){
         Objects.requireNonNull(id);
         Shipment s = em.find(Shipment.class, id);
         s.setStatus("failed");
-        em.getTransaction();
         em.persist(s);
-        em.getTransaction().commit();
     }
 }

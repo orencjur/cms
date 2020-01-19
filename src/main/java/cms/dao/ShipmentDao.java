@@ -42,10 +42,8 @@ public class ShipmentDao extends baseDao<Shipment>{
 
     public boolean deleteShipment(Integer id){
         Shipment s = find(id);
-        em.getTransaction();
         try {
             em.remove(s);
-            em.getTransaction().commit();
             return true;
         }catch (Exception e){
             return false;
@@ -56,9 +54,7 @@ public class ShipmentDao extends baseDao<Shipment>{
         Shipment s = new Shipment();
         s.setStatus("Pending");
         s.setDestination(destination);
-        em.getTransaction();
         em.persist(s);
-        em.getTransaction().commit();
     }
 
 }

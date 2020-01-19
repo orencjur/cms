@@ -33,7 +33,8 @@ public class RegularuserController {
         return service.findAll();
     }
 
-    @PutMapping(value = "/regularsers/finished", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/finished", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void setfinished(String description,@RequestBody Shipment shipment){
          service.setShipmentFinished(shipment.getId(),description);
     }
@@ -41,6 +42,7 @@ public class RegularuserController {
 
 
     @PutMapping(value = "/regularsers/failed", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void setfailed(@RequestBody Shipment shipment) {
         service.setShipmentFailed(shipment.getId());
     }
