@@ -19,5 +19,8 @@ public class RegularuserTest {
         assertEquals(user.getUsername(), "123456");
         assertEquals(user.getFullname(), "Eleonora Kasaiova");
         assertEquals(user.getPassword(), "123");
+
+        user.setUsername("654321");
+        assertEquals("654321", user.getUsername());
     }
 }
