@@ -64,9 +64,8 @@ public class RegularuserServiceTest {
         sut.setShipmentFailed(69);
         Shipment res = shipmentService.find(69);
         Assert.assertEquals(res.getStatus(),"failed");
-
-
     }
+
     @Test
     public void setShipmentFinishedTest(){
         final Shipment shipment = genshipment();

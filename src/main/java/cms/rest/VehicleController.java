@@ -37,10 +37,11 @@ public class VehicleController {
 
 
 
-        @DeleteMapping(value = "/vehicles/delete", consumes = MediaType.APPLICATION_JSON_VALUE)
-        public void deleteVehicle(@RequestBody Vehicle v){
-            vehicleService.destroyVehicle(v.getLicenseplate());
+        @DeleteMapping(value = "/vehicles/delete/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
+        public void deleteVehicle(@PathVariable String id){
+            vehicleService.destroyVehicle(id);
         }
+
 
         @PutMapping(value = "/vehicles/shipment", consumes = MediaType.APPLICATION_JSON_VALUE)
         @ResponseStatus(HttpStatus.NO_CONTENT)

@@ -33,10 +33,10 @@ public class RegularuserController {
         return service.findAll();
     }
 
-    @PutMapping(value = "/finished", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/finished/{shipment}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void setfinished(String description,@RequestBody Shipment shipment){
-         service.setShipmentFinished(shipment.getId(),description);
+    public void setfinished(@PathVariable Integer shipment){
+         service.setShipmentFinished(shipment, "Finished without problems");
     }
 
 
